@@ -6,9 +6,9 @@ Collection of my beginner-level projects and practice tasks to build a strong fo
 # Node.js Setup Guide (Download Method)
 This will helps you to install Node.js by downloading it directly from the official website. Ideal for beginners who want a simple setup without using version managers.
 
-🖥️ Supported Platforms
-    For Windows - .msi
-    For macOS   - .pkg
+🖥️ Supported Platforms <br />
+    For Windows - .msi <br />
+    For macOS   - .pkg <br />
     For Linux   - .xz
 
 ✅ Step-by-Step Installation
@@ -33,17 +33,11 @@ Official Download Page: [https://nodejs.org/en/download](https://nodejs.org/en/d
 # 3. Verify the Installation
   Open a terminal (Command Prompt / Terminal) and run the following: <br />
     node -v <br />
-    npm -v
+    npm -v <br />
    
 Terminal Output <br />
-![image](https://github.com/user-attachments/assets/49786b99-5480-42f9-b986-93e86c5a0408)
+![image](https://github.com/user-attachments/assets/f2178900-2b21-4eec-9335-30b923fcb83c) <br />
 You should see version numbers for both node and npm. <br />
-
-
-# 📌 Useful Commands
-  npm install <package-name>    # Install a package <br />
-  npm run <script>              # Run a custom script <br />
-  node <filename>.js            # Run a JavaScript file
 
 # 🙋 Need Help?
   Yor can read the official documentation: <br />
