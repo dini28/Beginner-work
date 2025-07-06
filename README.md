@@ -13,39 +13,39 @@ This will helps you to install Node.js by downloading it directly from the offic
 
 ✅ Step-by-Step Installation
 # 1. Download Node.js
-  Go to the official website: [https://nodejs.org/en](https://nodejs.org/en)
-  Choose the LTS (Recommended) version for stability.
-  Download the appropriate installer for your operating system.
+  Go to the official website: [https://nodejs.org/en](https://nodejs.org/en) <br />
+  Choose the LTS (Recommended) version for stability. <br />
+  Download the appropriate installer for your operating system. <br />
 
 Node.js Download Page
-Official Download Page: [https://nodejs.org/en/download](https://nodejs.org/en/download)
-![image](https://github.com/user-attachments/assets/7ba4b407-d73d-45a7-8692-cc48ac9e9a80)
+Official Download Page: [https://nodejs.org/en/download](https://nodejs.org/en/download) <br />
+![image](https://github.com/user-attachments/assets/7ba4b407-d73d-45a7-8692-cc48ac9e9a80) <br />
 
 
 # 2. Run the Installer
-  Open the downloaded installer file.
-    Follow the setup wizard:
-        Accept license
-        Use default settings
-    Click "Next" until finish
+  Open the downloaded installer file. <br />
+    Follow the setup wizard: <br />
+        Accept license <br />
+        Use default settings <br />
+    Click "Next" until finish 
 
 
 # 3. Verify the Installation
-  Open a terminal (Command Prompt / Terminal) and run the following:
-    node -v
+  Open a terminal (Command Prompt / Terminal) and run the following: <br />
+    node -v <br />
     npm -v
    
-Terminal Output
+Terminal Output <br />
 ![image](https://github.com/user-attachments/assets/49786b99-5480-42f9-b986-93e86c5a0408)
-You should see version numbers for both node and npm.
+You should see version numbers for both node and npm. <br />
 
 
 # 📌 Useful Commands
-  npm install <package-name>    # Install a package
-  npm run <script>              # Run a custom script
+  npm install <package-name>    # Install a package <br />
+  npm run <script>              # Run a custom script <br />
   node <filename>.js            # Run a JavaScript file
 
 # 🙋 Need Help?
-  Yor can read the official documentation:
-  Node.js Docs [https://nodejs.org/docs/latest/api/](https://nodejs.org/docs/latest/api/)
+  Yor can read the official documentation: <br />
+  Node.js Docs [https://nodejs.org/docs/latest/api/](https://nodejs.org/docs/latest/api/) <br />
   npm Docs     [https://docs.npmjs.com/](https://docs.npmjs.com/)
