@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Mathematical Heritage</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <link rel="shortcut icon" href="image.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <nav>
+        <div>
+            <img src="logo.png" alt="Mathematical Heritage Logo" />
+        </div>
+
+        <div id="desktop-menu">
+            <div>
+                <a href="#home">Home</a>
+                <a href="#calculator">Calculator</a>
+                <a href="#mathematicians">Mathematicians</a>
+                <a href="#engineering">Engineering Tools</a>
+                <a href="#history">History</a>
+                <a href="#about">About</a>
+            </div>
+
+        </div>
+
+
+        <div>
+            <!-- Mobile menu button -->
+            <button type="button" id="mobile-menu-button">
+                <svg id="menu-open-icon" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg id="menu-close-icon" viewBox="0 0 24 24" stroke="currentColor" style="display: none;">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" style="display: none;">
+            <div>
+                <a href="#home">Home</a>
+                <a href="#calculator">Calculator</a>
+                <a href="#mathematicians">Mathematicians</a>
+                <a href="#engineering">Engineering Tools</a>
+                <a href="#history">History</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Mathematical Background -->
+    <section id="home">
+        <div>
+            <img src="images/bg.png" alt="Mathematical Background" />
+            <div>
+                <div>
+                    <h1>Indian Mathematical Heritage</h1>
+                    <p>Explore the rich legacy of Indian mathematics through our advanced calculator, celebrating the
+                        brilliant minds who shaped mathematical thinking for centuries.</p>
+                </div>
+                <div>
+                    <div class="quick-links">
+                        <a href="#calculator">Scientific Calculator</a>
+                        <a href="#mathematicians">Great Mathematicians</a>
+                        <a href="#engineering">Engineering Tools</a>
+                        <a href="#history">Calculation History</a>
+                    </div>
+                    <dl>
+                        <div>
+                            <dt>Years of Heritage</dt>
+                            <dd>5000+</dd>
+                        </div>
+                        <div>
+                            <dt>Mathematical Concepts</dt>
+                            <dd>100+</dd>
+                        </div>
+                        <div>
+                            <dt>Calculation Functions</dt>
+                            <dd>50+</dd>
+                        </div>
+                        <div>
+                            <dt>Engineering Tools</dt>
+                            <dd>25+</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <hr />
+
+    <!-- About Indian Mathematicians Section -->
+    <section id="mathematicians">
+        <div>
+            <div>
+                <h2>Great Indian Mathematicians</h2>
+                <p>India has produced some of the world's most brilliant mathematical minds. Their contributions have
+                    shaped modern mathematics and continue to inspire generations of scholars.</p>
+            </div>
+
+            <div>
+                <!-- Aryabhata -->
+                <div>
+                    <div>
+                        <img src="images/aryabhata.png" alt="Aryabhata" />
+                    </div>
+                    <div>
+                        <h3>Aryabhata (476-550 CE)</h3>
+                        <p>Known as the father of Indian mathematics and astronomy. He introduced the concept of zero,
+                            calculated the value of π (pi), and developed the place-value system. His work "Aryabhatiya"
+                            is one of the earliest surviving mathematical texts.</p>
+                        <ul>
+                            <li>Introduced the decimal place-value system</li>
+                            <li>Calculated π = 3.1416</li>
+                            <li>Developed trigonometric functions</li>
+                            <li>Solved quadratic equations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Ramanujan -->
+                <div>
+                    <div>
+                        <img src="images/ramanujan.png" alt="Srinivasa Ramanujan" />
+                    </div>
+                    <div>
+                        <h3>Srinivasa Ramanujan (1887-1920)</h3>
+                        <p>A self-taught mathematical genius who made extraordinary contributions to mathematical
+                            analysis, number theory, infinite series, and continued fractions. His notebooks contain
+                            thousands of mathematical results.</p>
+                        <ul>
+                            <li>Discovered over 3,900 mathematical results</li>
+                            <li>Developed the Ramanujan prime and Ramanujan theta function</li>
+                            <li>Contributed to partition theory</li>
+                            <li>Worked on mock theta functions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Shakuntala Devi -->
+                <div>
+                    <div>
+                        <img src="images/shakuntala.png" alt="Shakuntala Devi" />
+                    </div>
+                    <div>
+                        <h3>Shakuntala Devi (1929-2013)</h3>
+                        <p>Known as the "Human Computer," she demonstrated extraordinary mental calculation abilities.
+                            She could perform complex calculations faster than electronic computers of her time.</p>
+                        <ul>
+                            <li>Calculated 23rd root of a 201-digit number in 50 seconds</li>
+                            <li>Multiplied two 13-digit numbers in 28 seconds</li>
+                            <li>Authored several books on mathematics</li>
+                            <li>Promoted mathematical education worldwide</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Brahmagupta -->
+                <div>
+                    <div>
+                        <img src="images/brahmagupta.png" alt="Brahmagupta" />
+                    </div>
+                    <div>
+                        <h3>Brahmagupta (628-668 CE)</h3>
+                        <p>First mathematician to give rules for computing with zero and negative numbers. He developed
+                            the formula for the area of a cyclic quadrilateral and made significant contributions to
+                            algebra.</p>
+                        <ul>
+                            <li>Established rules for zero and negative numbers</li>
+                            <li>Developed Brahmagupta's formula for cyclic quadrilaterals</li>
+                            <li>Solved quadratic equations</li>
+                            <li>Contributed to number theory</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bhaskara II -->
+                <div>
+                    <div>
+                        <img src="images/bhaskara.png" alt="Bhaskara II" />
+                    </div>
+                    <div>
+                        <h3>Bhaskara II (1114-1185 CE)</h3>
+                        <p>Also known as Bhaskaracharya, he made significant contributions to algebra, arithmetic,
+                            geometry, and astronomy. His work "Lilavati" is famous for its mathematical problems.</p>
+                        <ul>
+                            <li>Developed concepts of infinitesimal calculus</li>
+                            <li>Solved Pell's equation</li>
+                            <li>Calculated planetary positions accurately</li>
+                            <li>Contributed to combinatorics</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Madhava -->
+                <div>
+                    <div>
+                        <img src="images/madhava.png" alt="Madhava of Sangamagrama" />
+                    </div>
+                    <div>
+                        <h3>Madhava of Sangamagrama (1340-1425 CE)</h3>
+                        <p>Considered the founder of mathematical analysis. He developed infinite series expansions for
+                            trigonometric functions, centuries before Newton and Leibniz.</p>
+                        <ul>
+                            <li>Developed Taylor series for trigonometric functions</li>
+                            <li>Calculated π to 11 decimal places</li>
+                            <li>Founded the Kerala School of Mathematics</li>
+                            <li>Contributed to calculus concepts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <hr />
+
+    <!-- Calculator Section -->
+    <section id="calculator">
+        <div>
+            <div>
+                <h2>Scientific Calculator</h2>
+                <p>Experience the power of mathematical computation with our advanced scientific calculator, inspired by
+                    the great traditions of Indian mathematics.</p>
+            </div>
+
+            <div>
+                <!-- Calculator Mode Toggle -->
+                <div>
+                    <button id="basic-mode-btn" type="button">Basic</button>
+                    <button id="scientific-mode-btn" type="button">Scientific</button>
+                </div>
+
+                <!-- Calculator Display -->
+                <div id="calculator-display">
+                    <div id="display-screen">0</div>
+                    <div id="display-history"></div>
+                </div>
+
+                <!-- Basic Calculator -->
+                <div id="basic-calculator">
+                    <div>
+                        <button onclick="clearAll()">C</button>
+                        <button onclick="clearEntry()">CE</button>
+                        <button onclick="deleteLast()">⌫</button>
+                        <button onclick="appendOperator('/')">/</button>
+
+                        <button onclick="appendNumber('7')">7</button>
+                        <button onclick="appendNumber('8')">8</button>
+                        <button onclick="appendNumber('9')">9</button>
+                        <button onclick="appendOperator('*')">×</button>
+
+                        <button onclick="appendNumber('4')">4</button>
+                        <button onclick="appendNumber('5')">5</button>
+                        <button onclick="appendNumber('6')">6</button>
+                        <button onclick="appendOperator('-')">-</button>
+
+                        <button onclick="appendNumber('1')">1</button>
+                        <button onclick="appendNumber('2')">2</button>
+                        <button onclick="appendNumber('3')">3</button>
+                        <button onclick="appendOperator('+')">+</button>
+
+                        <button onclick="appendNumber('0')">0</button>
+                        <button onclick="appendDecimal()">.</button>
+                        <button onclick="toggleSign()">±</button>
+                        <button onclick="calculate()">=</button>
+                    </div>
+                </div>
+
+                <!-- Scientific Calculator -->
+                <div id="scientific-calculator" style="display: none;">
+                    <div>
+                        <!-- Angle Mode Toggle -->
+                        <div>
+                            <button id="deg-btn" onclick="setAngleMode('deg')">DEG</button>
+                            <button id="rad-btn" onclick="setAngleMode('rad')">RAD</button>
+                            <button id="grad-btn" onclick="setAngleMode('grad')">GRAD</button>
+                        </div>
+
+                        <!-- Scientific Functions -->
+                        <div>
+                            <button onclick="appendFunction('sin(')">sin</button>
+                            <button onclick="appendFunction('cos(')">cos</button>
+                            <button onclick="appendFunction('tan(')">tan</button>
+                            <button onclick="appendFunction('log(')">log</button>
+                            <button onclick="appendFunction('ln(')">ln</button>
+
+                            <button onclick="appendFunction('asin(')">sin⁻¹</button>
+                            <button onclick="appendFunction('acos(')">cos⁻¹</button>
+                            <button onclick="appendFunction('atan(')">tan⁻¹</button>
+                            <button onclick="appendConstant('π')">π</button>
+                            <button onclick="appendConstant('e')">e</button>
+
+                            <button onclick="appendFunction('sqrt(')">√</button>
+                            <button onclick="appendOperator('^')">x^y</button>
+                            <button onclick="appendFunction('exp(')">e^x</button>
+                            <button onclick="appendOperator('(')">(</button>
+                            <button onclick="appendOperator(')')">)</button>
+
+                            <button onclick="factorial()">n!</button>
+                            <button onclick="appendFunction('abs(')">|x|</button>
+                            <button onclick="percentage()">%</button>
+                            <button onclick="reciprocal()">1/x</button>
+                            <button onclick="square()">x²</button>
+                        </div>
+
+                        <!-- Number Pad -->
+                        <div>
+                            <button onclick="clearAll()">C</button>
+                            <button onclick="clearEntry()">CE</button>
+                            <button onclick="deleteLast()">⌫</button>
+                            <button onclick="appendOperator('/')">/</button>
+
+                            <button onclick="appendNumber('7')">7</button>
+                            <button onclick="appendNumber('8')">8</button>
+                            <button onclick="appendNumber('9')">9</button>
+                            <button onclick="appendOperator('*')">×</button>
+
+                            <button onclick="appendNumber('4')">4</button>
+                            <button onclick="appendNumber('5')">5</button>
+                            <button onclick="appendNumber('6')">6</button>
+                            <button onclick="appendOperator('-')">-</button>
+
+                            <button onclick="appendNumber('1')">1</button>
+                            <button onclick="appendNumber('2')">2</button>
+                            <button onclick="appendNumber('3')">3</button>
+                            <button onclick="appendOperator('+')">+</button>
+
+                            <button onclick="appendNumber('0')">0</button>
+                            <button onclick="appendDecimal()">.</button>
+                            <button onclick="toggleSign()">±</button>
+                            <button onclick="calculate()">=</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engineering Calculator -->
+                <div id="engineering-calculator" style="display: none;">
+                    <div>
+                        <h3>Engineering Functions</h3>
+
+                        <!-- Unit Conversions -->
+                        <div>
+                            <h4>Unit Conversions</h4>
+                            <button onclick="convertLength()">Length</button>
+                            <button onclick="convertArea()">Area</button>
+                            <button onclick="convertVolume()">Volume</button>
+                            <button onclick="convertMass()">Mass</button>
+                            <button onclick="convertTemperature()">Temperature</button>
+                            <button onclick="convertPressure()">Pressure</button>
+                        </div>
+
+                        <!-- Engineering Calculations -->
+                        <div>
+                            <h4>Engineering Calculations</h4>
+                            <button onclick="beamDeflection()">Beam Deflection</button>
+                            <button onclick="pipeFlow()">Pipe Flow</button>
+                            <button onclick="heatTransfer()">Heat Transfer</button>
+                            <button onclick="electricalPower()">Electrical Power</button>
+                            <button onclick="structuralLoad()">Structural Load</button>
+                            <button onclick="fluidMechanics()">Fluid Mechanics</button>
+                        </div>
+
+                        <!-- Advanced Mathematical Functions -->
+                        <div>
+                            <h4>Advanced Functions</h4>
+                            <button onclick="solveQuadratic()">Quadratic Solver</button>
+                            <button onclick="matrixOperations()">Matrix Operations</button>
+                            <button onclick="complexNumbers()">Complex Numbers</button>
+                            <button onclick="statisticalAnalysis()">Statistics</button>
+                            <button onclick="numericIntegration()">Integration</button>
+                            <button onclick="numericDifferentiation()">Differentiation</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <hr />
+
+    <!-- Calculation Rules Section -->
+    <section id="calculation-rules">
+        <div>
+            <h2>Mathematical Calculation Rules</h2>
+            <p>Understanding the fundamental rules and principles that govern mathematical calculations.</p>
+
+            <div>
+                <!-- Basic Arithmetic Rules -->
+                <div>
+                    <h3>Basic Arithmetic Rules</h3>
+                    <ul>
+                        <li><strong>Order of Operations (PEMDAS/BODMAS):</strong> Parentheses/Brackets,
+                            Exponents/Orders, Multiplication and Division (left to right), Addition and Subtraction
+                            (left to right)</li>
+                        <li><strong>Commutative Property:</strong> a + b = b + a, a × b = b × a</li>
+                        <li><strong>Associative Property:</strong> (a + b) + c = a + (b + c), (a × b) × c = a × (b × c)
+                        </li>
+                        <li><strong>Distributive Property:</strong> a × (b + c) = a × b + a × c</li>
+                    </ul>
+                </div>
+
+                <!-- Trigonometric Rules -->
+                <div>
+                    <h3>Trigonometric Rules</h3>
+                    <ul>
+                        <li><strong>Pythagorean Identity:</strong> sin²θ + cos²θ = 1</li>
+                        <li><strong>Angle Addition:</strong> sin(A + B) = sin(A)cos(B) + cos(A)sin(B)</li>
+                        <li><strong>Double Angle:</strong> sin(2θ) = 2sin(θ)cos(θ)</li>
+                        <li><strong>Unit Circle:</strong> sin(0°) = 0, cos(0°) = 1, sin(90°) = 1, cos(90°) = 0</li>
+                    </ul>
+                </div>
+
+                <!-- Logarithmic Rules -->
+                <div>
+                    <h3>Logarithmic Rules</h3>
+                    <ul>
+                        <li><strong>Product Rule:</strong> log(ab) = log(a) + log(b)</li>
+                        <li><strong>Quotient Rule:</strong> log(a/b) = log(a) - log(b)</li>
+                        <li><strong>Power Rule:</strong> log(a^n) = n × log(a)</li>
+                        <li><strong>Change of Base:</strong> log_b(a) = log(a) / log(b)</li>
+                    </ul>
+                </div>
+
+                <!-- Algebraic Rules -->
+                <div>
+                    <h3>Algebraic Rules</h3>
+                    <ul>
+                        <li><strong>Exponent Rules:</strong> a^m × a^n = a^(m+n), (a^m)^n = a^(mn)</li>
+                        <li><strong>Radical Rules:</strong> √(ab) = √a × √b, √(a/b) = √a / √b</li>
+                        <li><strong>Factoring:</strong> a² - b² = (a + b)(a - b)</li>
+                        <li><strong>Quadratic Formula:</strong> x = (-b ± √(b² - 4ac)) / 2a</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <hr />
+
+    <!-- Engineering Calculations Section -->
+    <section id="engineering">
+        <div>
+            <h2>Engineering Calculation Tools</h2>
+            <p>Specialized tools for engineering calculations and unit conversions.</p>
+
+            <div>
+                <!-- Mechanical Engineering -->
+                <div>
+                    <h3>Mechanical Engineering</h3>
+                    <div>
+                        <h4>Beam Analysis</h4>
+                        <form id="beam-form">
+                            <div>
+                                <label for="beam-length">Length (m):</label>
+                                <input type="number" id="beam-length" step="0.01" />
+                            </div>
+                            <div>
+                                <label for="beam-load">Load (N):</label>
+                                <input type="number" id="beam-load" step="0.01" />
+                            </div>
+                            <div>
+                                <label for="beam-elasticity">Elasticity (GPa):</label>
+                                <input type="number" id="beam-elasticity" step="0.01" />
+                            </div>
+                            <button type="button" onclick="calculateBeamDeflection()">Calculate Deflection</button>
+                        </form>
+                        <div id="beam-result"></div>
+                    </div>
+                </div>
+
+                <!-- Electrical Engineering -->
+                <div>
+                    <h3>Electrical Engineering</h3>
+                    <div>
+                        <h4>Ohm's Law Calculator</h4>
+                        <form id="ohm-form">
+                            <div>
+                                <label for="voltage">Voltage (V):</label>
+                                <input type="number" id="voltage" step="0.01" />
+                            </div>
+                            <div>
+                                <label for="current">Current (A):</label>
+                                <input type="number" id="current" step="0.01" />
+                            </div>
+                            <div>
+                                <label for="resistance">Resistance (Ω):</label>
+                                <input type="number" id="resistance" step="0.01" />
+                            </div>
+                            <button type="button" onclick="calculateOhmsLaw()">Calculate</button>
+                        </form>
+                        <div id="ohm-result"></div>
+                    </div>
+                </div>
+
+                <!-- Civil Engineering -->
+                <div>
+                    <h3>Civil Engineering</h3>
+                    <div>
+                        <h4>Concrete Mix Calculator</h4>
+                        <form id="concrete-form">
+                            <div>
+                                <label for="concrete-volume">Volume (m³):</label>
+                                <input type="number" id="concrete-volume" step="0.01" />
+                            </div>
+                            <div>
+                                <label for="concrete-grade">Grade:</label>
+                                <select id="concrete-grade">
+                                    <option value="M20">M20</option>
+                                    <option value="M25">M25</option>
+                                    <option value="M30">M30</option>
+                                </select>
+                            </div>
+                            <button type="button" onclick="calculateConcreteMix()">Calculate Mix</button>
+                        </form>
+                        <div id="concrete-result"></div>
+                    </div>
+                </div>
+
+                <!-- Chemical Engineering -->
+                <div>
+                    <h3>Chemical Engineering</h3>
+                    <div>
+                        <h4>Heat Transfer Calculator</h4>
+                        <form id="heat-form">
+                            <div>
+                                <label for="heat-area">Area (m²):</label>
+                                <input type="number" id="heat-area" step="0.01" />
+                            </div>
+                            <div>
+                                <label for="heat-coefficient">Heat Transfer Coefficient (W/m²K):</label>
+                                <input type="number" id="heat-coefficient" step="0.01" />
+                            </div>
+                            <div>
+                                <label for="temp-diff">Temperature Difference (K):</label>
+                                <input type="number" id="temp-diff" step="0.01" />
+                            </div>
+                            <button type="button" onclick="calculateHeatTransfer()">Calculate Heat Transfer</button>
+                        </form>
+                        <div id="heat-result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <hr />
+
+    <!-- Calculation History Section -->
+    <section id="history">
+        <div>
+            <h2>Calculation History</h2>
+            <p>View and manage your calculation history for reference and analysis.</p>
+
+            <div>
+                <div>
+                    <button onclick="clearHistory()">Clear History</button>
+                    <button onclick="exportHistory()">Export History</button>
+                    <button onclick="importHistory()">Import History</button>
+                </div>
+
+                <div id="history-list">
+                    <div>
+                        <h3>Recent Calculations</h3>
+                        <div id="recent-calculations">
+                            <!-- History items will be populated here -->
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Saved Calculations</h3>
+                        <div id="saved-calculations">
+                            <!-- Saved calculations will be populated here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Statistics</h3>
+                    <div>
+                        <div>
+                            <span>Total Calculations:</span>
+                            <span id="total-calculations">0</span>
+                        </div>
+                        <div>
+                            <span>Most Used Function:</span>
+                            <span id="most-used-function">None</span>
+                        </div>
+                        <div>
+                            <span>Average Session Time:</span>
+                            <span id="avg-session-time">0 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <hr />
+
+    <!-- About Section -->
+    <section id="about">
+        <div>
+            <h2>About This Project</h2>
+            <p>This calculator is a tribute to the rich mathematical heritage of India, combining modern computational
+                power with the wisdom of ancient mathematical traditions.</p>
+
+            <div>
+                <div>
+                    <h3>Our Mission</h3>
+                    <p>To make advanced mathematical calculations accessible while celebrating the contributions of
+                        Indian mathematicians to global mathematical knowledge.</p>
+                </div>
+
+                <div>
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Scientific calculator with trigonometric functions</li>
+                        <li>Unit conversion utilities</li>
+                        <li>Calculation history and analysis</li>
+                        <li>Educational content about Indian mathematicians</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Mathematical Legacy</h3>
+                    <p>From Aryabhata's introduction of zero to Ramanujan's infinite series, Indian mathematics has
+                        shaped the world. This calculator honors that tradition by providing tools that embody the
+                        precision and elegance of Indian mathematical thought.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <hr />
+
+    <!-- Footer Section -->
+    <footer>
+        <div>
+            <p>&copy; 2023 Indian Mathematical Heritage.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

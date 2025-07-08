@@ -1,0 +1,902 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+h4 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 2px solid #000000;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+/* Mobile menu button */
+#mobile-menu-button {
+    display: none;
+    background: none;
+    border: 2px solid #000000;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#mobile-menu-button svg {
+    width: 24px;
+    height: 24px;
+    stroke-width: 2;
+}
+
+/* Logo */
+nav img {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+}
+
+/* Desktop Menu */
+#desktop-menu {
+    display: flex;
+    align-items: center;
+}
+
+#desktop-menu > div {
+    display: flex;
+    gap: 2rem;
+}
+
+#desktop-menu a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+#desktop-menu a:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+
+/* Navigation Right Side */
+nav > div > div > div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#notifications-btn {
+    background: none;
+    border: 2px solid #000000;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#notifications-btn svg {
+    width: 24px;
+    height: 24px;
+    stroke-width: 2;
+}
+
+#notifications-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* User Menu */
+#user-menu-button {
+    background: none;
+    border: 2px solid #000000;
+    padding: 0.25rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#user-menu-button img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+#user-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    padding: 0.5rem;
+    min-width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#user-dropdown a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 4px;
+}
+
+#user-dropdown a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Mobile Menu */
+#mobile-menu {
+    background-color: #ffffff;
+    border-top: 2px solid #000000;
+    padding: 1rem;
+}
+
+#mobile-menu > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#mobile-menu a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    padding: 0.75rem;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#mobile-menu a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Hero Section */
+#home {
+    margin-top: 80px;
+    position: relative;
+    background-color: #ffffff;
+    padding: 4rem 0;
+    border-bottom: 2px solid #000000;
+}
+
+#home > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#home img {
+    display: none; /* Hide background image for clean theme */
+}
+
+#home > div > div {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#home h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+#home p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hero Buttons */
+#home > div > div > div:first-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#home > div > div > div:first-of-type a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+#home > div > div > div:first-of-type a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Hero Statistics */
+#home dl {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+#home dl > div {
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+#home dt {
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+#home dd {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    
+}
+
+/* Section Dividers */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #000000;
+    margin: 2rem 0;
+}
+
+/* Section Styles */
+section {
+    padding: 3rem 0;
+}
+
+section > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+section > div > div:first-child {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+section > div > div:first-child h2 {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    margin-bottom: 1rem;
+}
+
+/* Mathematicians Section */
+#mathematicians > div > div:last-child {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+#mathematicians > div > div:last-child > div {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+#mathematicians img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+}
+
+#mathematicians h3 {
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+#mathematicians ul {
+    list-style: none;
+    padding: 0;
+}
+
+#mathematicians li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+#mathematicians li:last-child {
+    border-bottom: none;
+}
+
+#mathematicians li:before {
+    content: "• ";
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Calculator Section */
+#calculator > div > div:last-child {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+/* Calculator Mode Toggle */
+#calculator > div > div:last-child > div:first-child {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#calculator > div > div:last-child > div:first-child button {
+    padding: 0.75rem 1.5rem;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#calculator > div > div:last-child > div:first-child button:hover,
+#calculator > div > div:last-child > div:first-child button.active {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Calculator Display */
+#calculator-display {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#display-screen {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: right;
+    color: #000000;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#display-history {
+    font-size: 1rem;
+    color: #666666;
+    text-align: right;
+    margin-bottom: 0.5rem;
+}
+
+/* Calculator Buttons */
+#basic-calculator > div,
+#scientific-calculator > div > div:last-child {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+#basic-calculator button,
+#scientific-calculator button {
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#basic-calculator button:hover,
+#scientific-calculator button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#basic-calculator button:active,
+#scientific-calculator button:active {
+    transform: scale(0.95);
+}
+
+/* Scientific Calculator Specific */
+#scientific-calculator > div > div:first-child {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#scientific-calculator > div > div:first-child button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+#scientific-calculator > div > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#scientific-calculator > div > div:nth-child(2) button {
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+/* Engineering Calculator */
+#engineering-calculator > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+#engineering-calculator > div > div {
+    padding: 1.5rem;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+#engineering-calculator h4 {
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+#engineering-calculator > div > div > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#engineering-calculator button {
+    padding: 0.75rem 1.5rem;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#engineering-calculator button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Calculation Rules Section */
+#calculation-rules > div > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+#calculation-rules > div > div > div {
+    padding: 1.5rem;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+#calculation-rules h3 {
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+#calculation-rules ul {
+    list-style: none;
+    padding: 0;
+}
+
+#calculation-rules li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+#calculation-rules li:last-child {
+    border-bottom: none;
+}
+
+#calculation-rules strong {
+    color: #000000;
+}
+
+/* Engineering Section */
+#engineering > div > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+#engineering > div > div > div {
+    padding: 2rem;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+#engineering h3 {
+    margin-bottom: 1.5rem;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+#engineering h4 {
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+/* Form Styles */
+form {
+    margin-top: 1rem;
+}
+
+form > div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #ffffff;
+}
+
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    padding: 0.75rem 1.5rem;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Result Display */
+[id$="-result"] {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    background-color: #ffffff;
+    font-weight: 600;
+    color: #000000;
+}
+
+/* History Section */
+#history > div > div:first-child {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#history > div > div:first-child button {
+    padding: 0.75rem 1.5rem;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#history > div > div:first-child button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#history-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+#history-list > div {
+    padding: 1.5rem;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+#history-list h3 {
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+#history > div > div:last-child {
+    padding: 1.5rem;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+#history > div > div:last-child > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+#history > div > div:last-child > div:last-child {
+    border-bottom: none;
+}
+
+/* About Section */
+#about > div > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+#about > div > div > div {
+    padding: 1.5rem;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+#about h3 {
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+#about li:last-child {
+    border-bottom: none;
+}
+
+#about li:before {
+    content: "• ";
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #mobile-menu-button {
+        display: block;
+    }
+    
+    #desktop-menu {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    #home h1 {
+        font-size: 2.5rem;
+    }
+    
+    #mathematicians > div > div:last-child > div {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    #mathematicians img {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    
+    #basic-calculator > div,
+    #scientific-calculator > div > div:last-child {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    #scientific-calculator > div > div:nth-child(2) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #engineering > div > div {
+        grid-template-columns: 1fr;
+    }
+    
+    #history-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    #home > div > div > div:first-of-type {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #home > div > div > div:first-of-type a {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #home dl {
+        grid-template-columns: 1fr;
+    }
+    
+    #calculator > div > div:last-child > div:first-child {
+        flex-direction: column;
+    }
+    
+    #calculator > div > div:last-child > div:first-child button {
+        width: 100%;
+    }
+    
+    #history > div > div:first-child {
+        flex-direction: column;
+    }
+    
+    #history > div > div:first-child button {
+        width: 100%;
+    }
+}
+
+/* Utility Classes */
+.hidden {
+    display: none !important;
+}
+
+.visible {
+    display: block !important;
+}
+
+.active {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+/* Print Styles */
+@media print {
+    nav {
+        display: none;
+    }
+    
+    #home {
+        margin-top: 0;
+    }
+    
+    section {
+        break-inside: avoid;
+    }
+    
+    * {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+}
